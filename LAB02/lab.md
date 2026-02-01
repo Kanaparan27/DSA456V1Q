@@ -61,3 +61,29 @@ def function4(number):
 
 ​Time Complexity: O(n) 
 Space Complexity: O(1)
+
+
+Part C — In-Lab Discussion
+Group Members
+
+Kanaparan (Me)
+
+Nikash
+
+Timing Data
+Team member	Timing for fibonacci	Timing for sum_to_number
+Kanaparan (Me)	0.0000049	0.4294699
+Nikash	0.0	0.0
+Summary
+function	fastest	slowest	difference
+sum_to_number	0.0	0.4294699	0.4294699
+fibonacci	0.0	0.0000049	0.0000049
+
+
+Reflection
+
+
+According to the findings, performance variations were primarily caused by the methodology employed rather than minor syntactic variations. Because the fibonacci function was implemented using an iterative loop, which eliminates the need for repetitive recalculations, it operated incredibly quickly. This maintains a very short execution time and a linear temporal complexity.
+Sum_to_goal, on the other hand, took a lot longer. It conducts repeated adds inside the loop, which increases runtime as the input expands even though it is still efficient. It just does more work per call than Fibonacci ,d
+Both methods employ a tiny and consistent amount of memory in terms of space use. A recursive method, which some students employed, would utilize more memory due to the function call stack, whereas the iterative fibonacci uses only a few variables.
+Ultimately, the most important lesson is that algorithm selection is more important than small code details. Performance can be significantly increased by avoiding needless recursion and repetition.
