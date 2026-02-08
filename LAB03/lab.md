@@ -23,6 +23,7 @@ Stack (recursion depth) = O(n)
 
 
 
+
 Function 2
 def recursive_function2(mystring,a, b):
     if(a >= b ):
@@ -53,6 +54,10 @@ So: R(n) = R(n-2) + c
 
 Time = O(n)
 Stack (depth) = O(n)
+
+
+
+
 
 Part C Reflection
 Describe how to approach writing recursive functions; what steps do you take?
