@@ -39,18 +39,18 @@ By removing some of these checks, there are fewer branch instructions and less c
 8
 He suggests removing branches like:
 
-```
+
 if (x < y)
     min = x;
 else
     min = y;
-```
+
 
 Instead, he prefers arithmetic tricks to avoid branching. For example:
 
-```
+
 min = y ^ ((x ^ y) & -(x < y));
-```
+
 
 This way you avoid unpredictable `if` statements and the CPU can use conditional moves instead.
 
@@ -63,8 +63,8 @@ The bug happened in GNU’s introsort when:
 
 It was related to incorrect pivot handling and recursion depth control in special edge cases.
 
-10
-(You did not provide content here.)
+10 n the graphs, when the threshold increases, the number of comparisons and the number of moves both increase, but the actual running time goes down. This looks confusing if we only measure comparisons and moves. The speaker explains that we are missing an important metric: how often the CPU guesses a branch wrong.
+
 
 11
 Fast code keeps execution in a predictable path and avoids deep nesting.
